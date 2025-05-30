@@ -4,7 +4,7 @@ export const featuredProducts = [
     name: "Stainless Steel Cookware Set",
     price: 129.99,
     originalPrice: 159.99,
-    image: "/images/cookware-set.jpg",
+    image: "./assets/images/applepay.png",
     rating: 4.8,
     ratingCount: 245,
     inStock: true,

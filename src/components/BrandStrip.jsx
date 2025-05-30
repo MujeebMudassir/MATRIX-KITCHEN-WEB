@@ -1,13 +1,41 @@
 import React from 'react';
 
 const brands = [
-  { id: 1, name: "Ashley", image: "/images/ashley.png" },
-  { id: 2, name: "Bakes", image: "/images/bakes.png" },
-  { id: 3, name: "Kitchen", image: "/images/kitchen.png" },
-  { id: 4, name: "Chefmate", image: "/images/chefmate.png" },
-  { id: 5, name: "Reverie", image: "/images/reverie.png" },
-  { id: 6, name: "Gourmet", image: "/images/gourmet.png" },
-  { id: 7, name: "Destile", image: "/images/destile.png" },
+  { 
+    id: 1, 
+    name: "Ashley", 
+    image: `${import.meta.env.BASE_URL}/images/ashley.png` 
+  },
+  { 
+    id: 2, 
+    name: "Bakes", 
+    image: `${import.meta.env.BASE_URL}/images/bakes.png` 
+  },
+  { 
+    id: 3, 
+    name: "Kitchen", 
+    image: `${import.meta.env.BASE_URL}/images/kitchen.png` 
+  },
+  { 
+    id: 4, 
+    name: "Chefmate", 
+    image: `${import.meta.env.BASE_URL}/images/chefmate.png` 
+  },
+  { 
+    id: 5, 
+    name: "Reverie", 
+    image: `${import.meta.env.BASE_URL}/images/reverie.png` 
+  },
+  { 
+    id: 6, 
+    name: "Gourmet", 
+    image: `${import.meta.env.BASE_URL}/images/gourmet.png` 
+  },
+  { 
+    id: 7, 
+    name: "Destile", 
+    image: `${import.meta.env.BASE_URL}/images/destile.png` 
+  },
 ];
 
 const BrandStrip = () => {

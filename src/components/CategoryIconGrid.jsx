@@ -5,43 +5,43 @@ const categories = [
   {
     id: 1,
     name: "Copper Bottles",
-    image: "/images/stand-mixers.png",
+    image: `${import.meta.env.BASE_URL}/images/stand-mixers.png`,
     link: "/category/stand-mixers"
   },
   {
     id: 2,
     name: "Plates",
-    image: "/images/blenders.png",
+    image: `${import.meta.env.BASE_URL}/images/blenders.png`,
     link: "/category/blenders"
   },
   {
     id: 3,
     name: "Decoratives",
-    image: "/images/coffee-makers.png",
+    image: `${import.meta.env.BASE_URL}/images/coffee-makers.png`,
     link: "/category/coffee-makers"
   },
   {
     id: 4,
     name: "Cookware",
-    image: "/images/cookware.png",
+    image: `${import.meta.env.BASE_URL}/images/cookware.png`,
     link: "/category/cookware"
   },
   {
     id: 5,
     name: "Knife Sets",
-    image: "/images/knife-sets.png",
+    image: `${import.meta.env.BASE_URL}/images/knife-sets.png`,
     link: "/category/knife-sets"
   },
   {
     id: 6,
     name: "Pooja Essentials",
-    image: "/images/juicers.png",
+    image: `${import.meta.env.BASE_URL}/images/juicers.png`,
     link: "/category/juicers"
   },
   {
     id: 7,
     name: "Others",
-    image: "/images/utensil-sets.png",
+    image: `${import.meta.env.BASE_URL}/images/utensil-sets.png`,
     link: "/category/utensil-sets"
   }
 ];

@@ -28,7 +28,7 @@ const CategoryCards = () => {
       id: 1,
       title: "Copper & Brass: Nature's Antibacterial Kitchenware for a Healthier Home",
       description: "Premium quality, durable",
-      image: "/images/cutting-board.jpeg",
+      image: `${import.meta.env.BASE_URL}/images/cutting-board.jpeg`,
       link: "/category/cutting-boards",
       size: "small"
     },
@@ -36,7 +36,7 @@ const CategoryCards = () => {
       id: 2,
       title: "Upgrade Your Cooking Game with the Timeless Magic of Copper & Brass",
       description: "Stylish & performance driven",
-      image: "/images/red-cookware.jpeg",
+      image: `${import.meta.env.BASE_URL}/images/red-cookware.jpeg`,
       link: "/category/cookware-sets",
       size: "medium"
     },
@@ -44,7 +44,7 @@ const CategoryCards = () => {
       id: 3,
       title: "Eat, Drink & Thrive: The Ancient Wisdom of Copper & Brass Utensils",
       description: "Professional grade drinking tools",
-      image: "/images/knife-block.jpeg",
+      image: `${import.meta.env.BASE_URL}/images/knife-block.jpeg`,
       link: "/category/knife-sets",
       size: "small"
     }
