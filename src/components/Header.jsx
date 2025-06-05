@@ -29,7 +29,7 @@ const Header = () => {
             <ChevronDown size={14} />
             <span className="ml-2">EN</span>
             <ChevronDown size={14} />
-            <Link to="/MATRIX-KITCHEN-WEB/login" className="ml-2 hover:underline">My Account</Link>
+            <Link to="/login" className="ml-2 hover:underline">My Account</Link>
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@ const Header = () => {
               <Heart size={20} />
               <span className="text-xs mt-1">Wishlist</span>
             </button>
-            <Link to="/MATRIX-KITCHEN-WEB/login" className="text-gray-700 flex flex-col items-center">
+            <Link to="/login" className="text-gray-700 flex flex-col items-center">
               <User size={20} />
               <span className="text-xs mt-1">Log In</span>
             </Link>

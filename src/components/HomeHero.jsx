@@ -35,7 +35,7 @@ const HomeHero = () => {
                       New Price : 399$
                     </p>
                     <div className="mt-4 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
-                      <Link to="/MATRIX-KITCHEN-WEB/product/1">
+                      <Link to="/product/1">
                         <Button 
                           className="bg-red-500 hover:bg-red-600 px-6 py-3 text-sm font-medium text-white"
                         >
