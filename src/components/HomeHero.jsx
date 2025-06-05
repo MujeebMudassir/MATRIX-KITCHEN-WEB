@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const HomeHero = () => {
   return (
@@ -7,7 +8,6 @@ const HomeHero = () => {
       {/* Navigation Row */}
       <div className="w-full mx-0 px-0 py-2">
         <div className="flex space-x-8 overflow-x-auto whitespace-nowrap px-4 sm:px-6 lg:px-8">
-         
         </div>
       </div>
 
@@ -35,9 +35,13 @@ const HomeHero = () => {
                       New Price : 399$
                     </p>
                     <div className="mt-4 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
-                      <Button className="bg-red-500 hover:bg-red-600 px-6 py-3 text-sm font-medium text-white">
-                        SHOP NOW
-                      </Button>
+                      <Link to="/product/1">
+                        <Button 
+                          className="bg-red-500 hover:bg-red-600 px-6 py-3 text-sm font-medium text-white"
+                        >
+                          SHOP NOW
+                        </Button>
+                      </Link>
                     </div>
                   </div>
                 </div>

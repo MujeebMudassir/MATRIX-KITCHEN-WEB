@@ -4,7 +4,10 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
+import Product from "./pages/Product"; // Import Product component
 import NotFound from "./pages/NotFound";
+import LoginPage from "./pages/login/LoginPage";
+import Profile from "./pages/login/Profile";
 
 const queryClient = new QueryClient();
 
@@ -16,7 +19,13 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/MATRIX-KITCHEN-WEB/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/product/:id" element={<Product />} /> {/* Add Product route */}
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/cart" element={<Profile />} />
+          <Route path="/orders" element={<Profile />} />
+          <Route path="/wishlist" element={<Profile />} />
+          <Route path="/addresses" element={<Profile />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

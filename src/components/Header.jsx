@@ -20,7 +20,7 @@ const Header = () => {
       <div className="w-full bg-gray-100">
         <div className="max-w-[1800px] mx-auto py-1 px-4 text-xs text-gray-700 hidden md:flex justify-between items-center">
           <div className="flex items-center gap-4">
-            <span>Welcome to BARTAAN Online Store!</span>
+            <span>Welcome to BARTANN Online Store!</span>
             <span>|</span>
             <span>Free shipping on orders over $99</span>
           </div>
@@ -29,7 +29,7 @@ const Header = () => {
             <ChevronDown size={14} />
             <span className="ml-2">EN</span>
             <ChevronDown size={14} />
-            <span className="ml-2">My Account</span>
+            <Link to="/login" className="ml-2 hover:underline">My Account</Link>
           </div>
         </div>
       </div>
@@ -38,10 +38,10 @@ const Header = () => {
       <div className="w-full">
         <div className="max-w-[1800px] mx-auto px-4 py-3 flex flex-col md:flex-row items-center justify-between gap-3">
           <Link to="/" className="text-2xl font-bold text-red-500">
-            BARTAAN
+            BARTANN
           </Link>
           
-          {/* Increased search bar width */}
+          {/* Search bar */}
           <div className="flex-1 w-full md:max-w-2xl lg:max-w-3xl relative">
             <Input 
               placeholder="Search for products" 
@@ -57,14 +57,14 @@ const Header = () => {
               <Heart size={20} />
               <span className="text-xs mt-1">Wishlist</span>
             </button>
-            <button className="text-gray-700 flex flex-col items-center">
+            <Link to="/login" className="text-gray-700 flex flex-col items-center">
               <User size={20} />
-              <span className="text-xs mt-1">Account</span>
-            </button>
+              <span className="text-xs mt-1">Log In</span>
+            </Link>
             <button className="text-gray-700 flex flex-col items-center relative">
               <ShoppingCart size={20} />
               <span className="absolute -top-1 -right-1 bg-red-500 text-white rounded-full w-4 h-4 text-xs flex items-center justify-center">
-                0
+                2
               </span>
               <span className="text-xs mt-1">Cart</span>
             </button>
@@ -72,7 +72,7 @@ const Header = () => {
         </div>
       </div>
       
-      {/* Full-width navigation bar */}
+      {/* Navigation bar */}
       <div className="w-full bg-red-500">
         <div className="max-w-[1800px] mx-auto px-4 py-2.5 overflow-x-auto">
           <div className="flex items-center space-x-6 whitespace-nowrap">
