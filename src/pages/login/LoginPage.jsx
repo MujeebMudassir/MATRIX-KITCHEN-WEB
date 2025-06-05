@@ -60,7 +60,7 @@ const LoginPage = () => {
   const handleNameSubmit = () => {
     if (name.trim() && email.trim()) {
       navigate(
-        `/profile?phone=${phoneNumber}&name=${encodeURIComponent(
+        `/MATRIX-KITCHEN-WEB/profile?phone=${phoneNumber}&name=${encodeURIComponent(
           name.trim()
         )}&email=${encodeURIComponent(email.trim())}`
       );

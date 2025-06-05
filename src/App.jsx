@@ -18,17 +18,18 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/MATRIX-KITCHEN-WEB/" element={<Index />} />{" "}
+          <Route path="/MATRIX-KITCHEN-WEB/" element={<Index />} />
+          <Route
+            path="/MATRIX-KITCHEN-WEB/product/:id"
+            element={<Product />}
+          />{" "}
           {/* Add Product route */}
-          <Route path="/MATRIX-KITCHEN-WEB">
-            <Route path="product/:id" element={<Product />} />
-            <Route path="login" element={<LoginPage />} />
-            <Route path="profile" element={<Profile />} />
-            <Route path="cart" element={<Profile />} />
-            <Route path="orders" element={<Profile />} />
-            <Route path="wishlist" element={<Profile />} />
-            <Route path="addresses" element={<Profile />} />
-          </Route>
+          <Route path="/MATRIX-KITCHEN-WEB/login" element={<LoginPage />} />
+          <Route path="/MATRIX-KITCHEN-WEB/profile" element={<Profile />} />
+          <Route path="/MATRIX-KITCHEN-WEB/cart" element={<Profile />} />
+          <Route path="/MATRIX-KITCHEN-WEB/orders" element={<Profile />} />
+          <Route path="/MATRIX-KITCHEN-WEB/wishlist" element={<Profile />} />
+          <Route path="/MATRIX-KITCHEN-WEB/addresses" element={<Profile />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
